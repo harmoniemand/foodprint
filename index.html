@@ -13,7 +13,7 @@
         <a href="#bread" data-ajax="false" onclick="handleDiv('bread');">Bread</a>
         <a href="#toppings" data-ajax="false" onclick="handleDiv('toppings')">Toppings</a>
         <a href="#place_time" data-ajax="false" onclick="handleDiv('place_time');">Place & Time</a>
-        <a href="send" data-ajax="false"onclick="handleDiv('send');">Send</a>
+        <a href="send" data-ajax="false"onclick="sendIt();">Send</a>
         <div id="summary">
 
         </div>
@@ -53,7 +53,7 @@
     </div>
     <script>
         var sandwich = new Object();
-        sandwich.topping = "";
+        var toppings = [];
         
         function handleDiv(id) {
             disableAll();
@@ -86,7 +86,7 @@
         }
 
         function chooseTopping(id) {
-            var toppings = "";
+            
             var toppingBox = document.getElementById(id);
             if (!toppingBox.classList.contains('chosen')) {
                 toppingBox.className += " chosen";
@@ -101,11 +101,23 @@
 
         function deleteItemFromArray(array, item) {
             for (var i = 0; i < array.length; i++) {
-                if (x[i] == id) {
-                    delete array[i];
+                if (array[i] == item) {
+                    array.splice(i, 1);
                 }
             }
             return array;
+        }
+
+        function sendIt() {
+            sandwich.toppings = toppings;
+            alert(sandwich);
+            var resultArray = new Object();
+            resultArray.order = JSON.stringify(sandwich);
+            console.log(resultArray);
+        }
+
+        function buildJSON(bread, toppings) {
+            
         }
     </script>
 </body>
