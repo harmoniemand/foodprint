@@ -55,6 +55,29 @@ div#bread.content {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
+
+.item {
+    display: block;
+    width: 200px;
+    border: 1px black solid;
+    float:left;
+    margin: 1em;
+    padding: 1em;
+}
+
+.item img, .title {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.item .title {
+    margin-top: 1em;
+}
+
+.chosen, .chosenOne {
+    background-color: RGBA(66, 230, 203, 0.5)
+}
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}

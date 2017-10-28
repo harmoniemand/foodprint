@@ -10,38 +10,102 @@
 </head>
 <body>
     <div id="mySidenav" class="sidenav">
-        <a href="#bread" data-ajax="false" onclick="javascript:handleDiv('bread');">Bread</a>
-        <a href="#toppings" data-ajax="false" onclick="javascript:handleDiv('toppings')">Toppings</a>
-        <a href="#place_time" data-ajax="false"onclick="javascript:handleDiv('place_time');">Place & Time</a>
-        <a href="send" data-ajax="false"onclick="javascript:handleDiv('send');">Send</a>
+        <a href="#bread" data-ajax="false" onclick="handleDiv('bread');">Bread</a>
+        <a href="#toppings" data-ajax="false" onclick="handleDiv('toppings')">Toppings</a>
+        <a href="#place_time" data-ajax="false" onclick="handleDiv('place_time');">Place & Time</a>
+        <a href="send" data-ajax="false"onclick="handleDiv('send');">Send</a>
         <div id="summary">
 
         </div>
     </div>
     
     <div id="bread" class="active">
-        <div class="item">
-            <img src="" alt="" class="icon">
+        <div class="item" onclick="chooseBread('korn')" id="korn">
+            <img src="assets/icons/korn.svg" alt="" class="icon">
             <span class="title">Vollkorn</span>
         </div>
-        <div class="item">
-                <img src="" alt="" class="icon">
+        <div class="item" onclick="chooseBread('weizen')" id="weizen">
+                <img src="assets/icons/weizen.svg" alt="" class="icon">
                 <span class="title">Weizen</span>
-            </div>
+        </div>
     </div>
     <div id="toppings" class="disable">
-        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="item" onclick="chooseTopping('cheese')" id="cheese">
+                <img src="assets/icons/cheese.svg" alt="" class="icon">
+                <span class="title">Cheese</span>
+            </div>
+            <div class="item" onclick="chooseTopping('turkey')" id="turkey">
+                    <img src="assets/icons/turkey.svg" alt="" class="icon">
+                    <span class="title">Turkey</span>
+            </div>
+            <div class="item" onclick="chooseTopping('salad')" id="salad">
+                    <img src="assets/icons/salad.svg" alt="" class="icon">
+                    <span class="title">Salad</span>
+            </div>
+            <div class="item" onclick="chooseTopping('egg')" id="egg">
+                    <img src="assets/icons/egg.svg" alt="" class="icon">
+                    <span class="title">Egg</span>
+            </div>
+            <div class="item" onclick="chooseTopping('salmon')" id="salmon">
+                    <img src="assets/icons/salmon.svg" alt="" class="icon">
+                    <span class="title">Salmon</span>
+            </div>
     </div>
     <script>
-        function handleDiv(href) {
+        var sandwich = new Object();
+        sandwich.topping = "";
+        
+        function handleDiv(id) {
             disableAll();
-            document.getElementById(href).className = "active";
+            document.getElementById(id).className = "active";
         }
+
         function disableAll() {
             var x = document.getElementsByClassName("active");
             for (var i = 0; i < x.length; i++) {
                 x[i].className = "disable";
             }
+        }
+
+        function chooseBread(id) {
+            var breadBox = document.getElementById(id);
+            if (!breadBox.classList.contains('chosenOne')) {
+                var x = document.getElementsByClassName("chosenOne");
+                for (var i = 0; i < x.length; i++) {
+                    x[i].classList.remove("chosenOne");
+                }
+                breadBox.className += " chosenOne";
+                sandwich.bread = id;
+            } else {
+                breadBox.classList.remove("chosenOne");
+                sandwich.bread = "";
+                //alert(bread);
+            }
+            console.log(sandwich.bread);
+            
+        }
+
+        function chooseTopping(id) {
+            var toppings = "";
+            var toppingBox = document.getElementById(id);
+            if (!toppingBox.classList.contains('chosen')) {
+                toppingBox.className += " chosen";
+                toppings.push(id);
+                
+            } else {
+                toppingBox.classList.remove("chosen");
+                toppings = deleteItemFromArray(toppings,id);
+            }
+            console.log(toppings);
+        }
+
+        function deleteItemFromArray(array, item) {
+            for (var i = 0; i < array.length; i++) {
+                if (x[i] == id) {
+                    delete array[i];
+                }
+            }
+            return array;
         }
     </script>
 </body>
