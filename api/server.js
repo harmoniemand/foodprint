@@ -11,6 +11,42 @@ app.use(bodyParser.json());
 
 app.use(cors());
 
+var expressWs = require('express-ws')(app);
+
+
+
+ 
+app.use(function (req, res, next) {
+  console.log('middleware');
+  req.received = new Date();
+  return next();
+});
+ 
+app.ws('/', function(ws, req) {
+
+  ws.on('message', function(msg) {
+      console.log("msg: " + msg);
+  });
+
+  console.log('socket', req.testing);
+});
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var port = 30080;        // set our port
 
 var router = express.Router();              // get an instance of the express Router

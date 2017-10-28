@@ -1,5 +1,4 @@
 
-
 const http = require("http");
 const config = require("../data/config");
 const incredients = require("../data/incredients");
@@ -33,7 +32,7 @@ function postTask(data, callback) {
 
     post_req.write(JSON.stringify(data));
     post_req.end();
-}
+};
 
 function getOrders(url, callback) {
 
@@ -118,9 +117,7 @@ function run() {
     getOrders(config.apiUrl + "/orders.json", function (orders) {
         fullfillOrders(orders);
     });
-}
-
-
+};
 
 module.exports = {
     run: run
