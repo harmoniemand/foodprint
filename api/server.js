@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 
 app.use(cors());
 
-var port = process.env.PORT || 8080;        // set our port
+var port = 30080;        // set our port
 
 var router = express.Router();              // get an instance of the express Router
 
