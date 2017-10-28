@@ -1,4 +1,9 @@
 
+var apiUrl = "http://127.0.0.1:8080";
+var robotUrl = "10.200.21.55:8080";
+
+
+
 var robotJson = {
     "ascOpcuaProfiles": [],
 
@@ -9,7 +14,6 @@ var robotJson = {
     "eSelectAxisOpc": "Z",
     "x_GripperOu": true
 };
-
 
 var incredients = [
 
@@ -95,7 +99,12 @@ var sendRequest = function (url, callback) {
 };
 
 
-sendRequest("http://127.0.0.1:8080/orders.json", function (obj) {
+function buildItem(item) {
+    
+}
+
+
+sendRequest( apiUrl + "/orders.json", function (obj) {
 
     obj.forEach(function (order) {
 
@@ -108,6 +117,8 @@ sendRequest("http://127.0.0.1:8080/orders.json", function (obj) {
                 pick(inc);
                 place();
             });
+
+            robotJson.x_StartMode = true;
 
             console.info(JSON.stringify(robotJson, null, 2));
 
