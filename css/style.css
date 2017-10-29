@@ -78,6 +78,12 @@ div#bread.content {
     background-color: RGBA(66, 230, 203, 0.5)
 }
 
+.logo {
+    position: absolute;
+    width: 10em;
+    bottom: 0;
+    left: 3em;
+}
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
