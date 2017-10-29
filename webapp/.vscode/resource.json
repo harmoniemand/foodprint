@@ -1,0 +1,7 @@
+{
+    "css": {
+        "style": [
+            "node_modules/bosch-bootstrap/css/bosch-bootstrap.min.css"
+        ]
+    }
+}

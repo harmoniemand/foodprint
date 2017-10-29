@@ -1,0 +1,434 @@
+{
+    "selection": [
+        {
+            "id": 1,
+            "name": "Cereal"
+        },
+        {
+            "id": 2,
+            "name": "Salad"
+        },
+        {
+            "id": 3,
+            "name": "Soup"
+        },
+        {
+            "id": 4,
+            "name": "Main meal"
+        },
+        {
+            "id": 5,
+            "name": "Snackbox"
+        }
+    ],
+
+    "salads": [
+        {
+            "id": 1,
+            "name": "Lettuce",
+            "coefficient": 1.1
+        },
+        {
+            "id": 2,
+            "name": "Iceberg lettuce",
+            "coefficient": 1.3
+        },
+        {
+            "id": 3,
+            "name": "Lamb´s lettuce",
+            "coefficient": 1.5
+        },
+        {
+            "id": 4,
+            "name": "Potatoe salad",
+            "coefficient": 1.6
+        }
+    ],
+
+    "ingredients": [
+        {
+            "id": 1,
+            "name": "Rocket",
+            "price": 0.50
+        },
+        {
+            "id": 2,
+            "name": "Corn",
+            "price": 0.50
+        },
+        {
+            "id": 3,
+            "name": "Cucumber",
+            "price": 0.50
+        },
+        {
+            "id": 4,
+            "name": "Mozzarella",
+            "price": 0.50
+        },
+        {
+            "id": 5,
+            "name": "Tomatoe",
+            "price": 0.50
+        },
+        {
+            "id": 6,
+            "name": "Paprika",
+            "price": 0.50
+        },
+        {
+            "id": 7,
+            "name": "Onion",
+            "price": 0.50
+        },
+        {
+            "id": 8,
+            "name": "Parma ham",
+            "price": 0.50
+        },
+        {
+            "id": 9,
+            "name": "Goat cheese",
+            "price": 0.50
+        },
+        {
+            "id": 10,
+            "name": "Turkey",
+            "price": 0.50
+        },
+        {
+            "id": 11,
+            "name": "Egg",
+            "price": 0.50
+        },
+        {
+            "id": 12,
+            "name": "Olive",
+            "price": 0.50
+        },
+        {
+            "id": 13,
+            "name": "Mushroom",
+            "price": 0.50
+        }
+    ],
+
+    "toppings":[
+        {
+          "id": 1,
+          "name": "Parmesan",
+          "price": 0.50
+        }, {
+          "id": 2,
+          "name": "Croutons",
+          "price": 0.50
+        }, {
+          "id": 3,
+          "name": "Walnuts",
+          "price": 0.50
+        }
+    ],
+
+    "locations":[
+        {
+          "_id": "59f51c7f2143003a29654d9b",
+          "company": "Solaren",
+          "latitude": 48.664978,
+          "longitude": 9.23844
+        },
+        {
+          "_id": "59f51c7faa2e769bf12c7344",
+          "company": "Telpod",
+          "latitude": 48.619222,
+          "longitude": 9.057455
+        },
+        {
+          "_id": "59f51c7f489346f8d18b55a6",
+          "company": "Memora",
+          "latitude": 48.698191,
+          "longitude": 9.057645
+        },
+        {
+          "_id": "59f51c7f0b666dc94dacfc14",
+          "company": "Accufarm",
+          "latitude": 48.705871,
+          "longitude": 9.206274
+        },
+        {
+          "_id": "59f51c7feaa315cfcdd41e69",
+          "company": "Isosphere",
+          "latitude": 48.820829,
+          "longitude": 9.074305
+        },
+        {
+          "_id": "59f51c7fd9c6f9a1cfb1fb32",
+          "company": "Supportal",
+          "latitude": 48.765883,
+          "longitude": 9.171245
+        },
+        {
+          "_id": "59f51c7f646954aecaa77e0a",
+          "company": "Qualitern",
+          "latitude": 48.80768,
+          "longitude": 9.1979
+        },
+        {
+          "_id": "59f51c7fdcf3b280804fecf7",
+          "company": "Omnigog",
+          "latitude": 48.694377,
+          "longitude": 9.208257
+        },
+        {
+          "_id": "59f51c7f499de195b8c6a206",
+          "company": "Martgo",
+          "latitude": 48.761454,
+          "longitude": 9.274311
+        },
+        {
+          "_id": "59f51c7fe37e02066ec176e6",
+          "company": "Recrisys",
+          "latitude": 48.604958,
+          "longitude": 9.188784
+        },
+        {
+          "_id": "59f51c7ffb873f4c061409ff",
+          "company": "Zaphire",
+          "latitude": 48.619385,
+          "longitude": 9.165788
+        },
+        {
+          "_id": "59f51c7ff3fbed37f45d2be2",
+          "company": "Intrawear",
+          "latitude": 48.753691,
+          "longitude": 9.146075
+        },
+        {
+          "_id": "59f51c7fc79db1a2295efa09",
+          "company": "Orbixtar",
+          "latitude": 48.813936,
+          "longitude": 9.284892
+        },
+        {
+          "_id": "59f51c7f3d5b45eaf55e7f59",
+          "company": "Microluxe",
+          "latitude": 48.625072,
+          "longitude": 9.112372
+        },
+        {
+          "_id": "59f51c7f4f89ac40fa6c0ced",
+          "company": "Sunclipse",
+          "latitude": 48.895935,
+          "longitude": 9.147155
+        },
+        {
+          "_id": "59f51c7ff86674ec574ddc23",
+          "company": "Parleynet",
+          "latitude": 48.753167,
+          "longitude": 9.112945
+        },
+        {
+          "_id": "59f51c7f518d8a8454b61695",
+          "company": "Accruex",
+          "latitude": 48.715339,
+          "longitude": 9.266268
+        },
+        {
+          "_id": "59f51c7fbeb022928c21e34b",
+          "company": "Exoswitch",
+          "latitude": 48.905837,
+          "longitude": 9.128076
+        },
+        {
+          "_id": "59f51c7f34d4f910d8991b3e",
+          "company": "Ozean",
+          "latitude": 48.750492,
+          "longitude": 9.031745
+        },
+        {
+          "_id": "59f51c7fa6cf119945870f5a",
+          "company": "Fossiel",
+          "latitude": 48.755477,
+          "longitude": 9.288158
+        },
+        {
+          "_id": "59f51c7f731c926cbdf2fc31",
+          "company": "Farmage",
+          "latitude": 48.635497,
+          "longitude": 9.288714
+        },
+        {
+          "_id": "59f51c7f498cbc1344c0d9ba",
+          "company": "Buzzmaker",
+          "latitude": 48.769023,
+          "longitude": 9.137018
+        },
+        {
+          "_id": "59f51c7f2263a8cf44d2272f",
+          "company": "Darwinium",
+          "latitude": 48.704457,
+          "longitude": 9.2535
+        },
+        {
+          "_id": "59f51c7f57dbcdc12e2de777",
+          "company": "Quintity",
+          "latitude": 48.727983,
+          "longitude": 9.087827
+        },
+        {
+          "_id": "59f51c7f8bd9300cbf97a277",
+          "company": "Lumbrex",
+          "latitude": 48.755164,
+          "longitude": 9.130104
+        },
+        {
+          "_id": "59f51c7fbb8206e70eb22005",
+          "company": "Zuvy",
+          "latitude": 48.588145,
+          "longitude": 9.084166
+        },
+        {
+          "_id": "59f51c7f15a9ce0dbcdc106d",
+          "company": "Eclipsent",
+          "latitude": 48.616302,
+          "longitude": 9.22711
+        },
+        {
+          "_id": "59f51c7f689e9014bfd169c1",
+          "company": "Octocore",
+          "latitude": 48.713485,
+          "longitude": 9.234245
+        },
+        {
+          "_id": "59f51c7fcccfef0c47228c34",
+          "company": "Quilm",
+          "latitude": 48.811629,
+          "longitude": 9.353132
+        },
+        {
+          "_id": "59f51c7f92b05621b5c69d30",
+          "company": "Iplax",
+          "latitude": 48.908164,
+          "longitude": 9.150373
+        },
+        {
+          "_id": "59f51c7f4a31601006a6f5a7",
+          "company": "Bostonic",
+          "latitude": 48.587817,
+          "longitude": 9.259532
+        },
+        {
+          "_id": "59f51c7f3e82829cf8e85654",
+          "company": "Duflex",
+          "latitude": 48.729237,
+          "longitude": 9.269307
+        },
+        {
+          "_id": "59f51c7f98ba765f8b9097f3",
+          "company": "Pharmex",
+          "latitude": 48.660558,
+          "longitude": 9.218173
+        },
+        {
+          "_id": "59f51c7fa82c0ff6f1dc1e21",
+          "company": "Prosely",
+          "latitude": 48.794735,
+          "longitude": 9.259281
+        },
+        {
+          "_id": "59f51c7fc503cb238a5e0586",
+          "company": "Xyqag",
+          "latitude": 48.851192,
+          "longitude": 9.219568
+        },
+        {
+          "_id": "59f51c7fe17c94c99806ce82",
+          "company": "Geekol",
+          "latitude": 48.699635,
+          "longitude": 9.271784
+        },
+        {
+          "_id": "59f51c7fc8afef67545ec9c0",
+          "company": "Gogol",
+          "latitude": 48.83188,
+          "longitude": 9.016188
+        },
+        {
+          "_id": "59f51c7fca32e19451252c51",
+          "company": "Tribalog",
+          "latitude": 48.698241,
+          "longitude": 9.22225
+        },
+        {
+          "_id": "59f51c7fdc6355a0254c0d2c",
+          "company": "Comstar",
+          "latitude": 48.699006,
+          "longitude": 9.149218
+        },
+        {
+          "_id": "59f51c7f8f5a05009ab0d9a3",
+          "company": "Quilch",
+          "latitude": 48.902212,
+          "longitude": 9.163573
+        },
+        {
+          "_id": "59f51c7fc58154515addbb10",
+          "company": "Zanity",
+          "latitude": 48.899504,
+          "longitude": 9.252306
+        },
+        {
+          "_id": "59f51c7ff17288dbcb7eafd6",
+          "company": "Ginkogene",
+          "latitude": 48.913646,
+          "longitude": 9.105781
+        },
+        {
+          "_id": "59f51c7f8a5ad7e0c960524d",
+          "company": "Helixo",
+          "latitude": 48.918283,
+          "longitude": 9.247571
+        },
+        {
+          "_id": "59f51c7f869819767cb89e74",
+          "company": "Kidgrease",
+          "latitude": 48.873304,
+          "longitude": 9.306341
+        },
+        {
+          "_id": "59f51c7ff00c648e4087ff3f",
+          "company": "Gazak",
+          "latitude": 48.710143,
+          "longitude": 9.105777
+        },
+        {
+          "_id": "59f51c7f1b7ba55e30bcb422",
+          "company": "Filodyne",
+          "latitude": 48.670897,
+          "longitude": 9.013982
+        },
+        {
+          "_id": "59f51c7fedbb038ffd81f3bc",
+          "company": "Magneato",
+          "latitude": 48.728017,
+          "longitude": 9.083176
+        },
+        {
+          "_id": "59f51c7fc72603449182197e",
+          "company": "Zaya",
+          "latitude": 48.810124,
+          "longitude": 9.042237
+        },
+        {
+          "_id": "59f51c7fd01c11a574a5c595",
+          "company": "Bristo",
+          "latitude": 48.644802,
+          "longitude": 9.176186
+        },
+        {
+          "_id": "59f51c7fc50cc7fed84ed4ea",
+          "company": "Earthpure",
+          "latitude": 48.81903,
+          "longitude": 9.022161
+        }
+      ]
+}

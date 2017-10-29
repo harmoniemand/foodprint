@@ -1,0 +1,50 @@
+{
+  "name": "react.webpack.npm",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "bootstrap": "^4.0.0-alpha.6",
+    "bootstrap-material-design": "^4.0.0-beta.4",
+    "fast-memoize": "^2.2.8",
+    "google-map-react": "^0.25.0",
+    "google-maps": "^3.2.1",
+    "history": "^4.7.2",
+    "leaflet": "^1.2.0",
+    "qrcode.react": "^0.7.2",
+    "react": "^15.6.2",
+    "react-addons-css-transition-group": "^15.6.0",
+    "react-addons-transition-group": "^15.6.0",
+    "react-dom": "^15.6.1",
+    "react-fa": "^5.0.0",
+    "react-google-maps": "^9.2.1",
+    "react-leaflet": "^1.7.1",
+    "react-popper": "^0.7.3",
+    "react-promise": "^1.2.1",
+    "react-redux": "^5.0.6",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^5.0.0-alpha.6",
+    "react-scripts": "^1.0.13",
+    "reactstrap": "^4.8.0",
+    "redux": "^3.7.2",
+    "redux-form": "^7.1.0",
+    "redux-logger": "^3.0.6",
+    "redux-promise-middleware": "^4.4.1",
+    "redux-storage": "^4.1.2",
+    "redux-storage-engine-localstorage": "^1.1.4",
+    "redux-storage-engine-sessionstorage": "^1.0.2",
+    "redux-thunk": "^2.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "redux-devtools": "^3.4.0"
+  }
+}
